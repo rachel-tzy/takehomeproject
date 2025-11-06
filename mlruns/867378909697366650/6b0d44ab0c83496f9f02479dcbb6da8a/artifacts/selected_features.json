@@ -1,0 +1,3 @@
+{
+  "selected_features": "['age' 'wage per hour' 'capital gains' 'capital losses'\n 'dividends from stocks' 'num persons worked for employer'\n 'weeks worked in year' 'ratio_capital_gain_wage' 'ratio_dividend_income'\n 'employment_intensity' 'class of worker' 'major industry code'\n 'detailed industry recode' 'major occupation code'\n 'detailed occupation recode' 'member of a labor union'\n 'reason for unemployment' 'full or part time employment stat' 'education'\n 'enroll in edu inst last wk' 'marital stat'\n 'detailed household and family stat'\n 'detailed household summary in household' 'family members under 18'\n 'race']"
+}

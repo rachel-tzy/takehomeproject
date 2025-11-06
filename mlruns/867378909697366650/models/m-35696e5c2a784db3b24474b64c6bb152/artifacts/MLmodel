@@ -1,0 +1,64 @@
+artifact_path: file:///C:/Users/tzy/Desktop/playground/TakeHomeProject/mlruns/867378909697366650/models/m-35696e5c2a784db3b24474b64c6bb152/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.10
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.2
+is_signature_from_type_hint: false
+metadata:
+  early_stopping: auc
+  n_features: 25
+  n_jobs: 1
+  n_samples: all
+  n_trials: 50
+  reduce_method: extra-trees
+  seed: 42
+  tune_loss: roc_auc
+  tune_method: hyperopt
+mlflow_version: 3.5.1
+model_id: m-35696e5c2a784db3b24474b64c6bb152
+model_size_bytes: 1350662
+model_uuid: m-35696e5c2a784db3b24474b64c6bb152
+prompts: null
+run_id: 6b0d44ab0c83496f9f02479dcbb6da8a
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  serving_input_path: serving_input_example.json
+  type: dataframe
+signature:
+  inputs: '[{"type": "long", "name": "age", "required": true}, {"type": "long", "name":
+    "wage per hour", "required": true}, {"type": "long", "name": "capital gains",
+    "required": true}, {"type": "long", "name": "capital losses", "required": true},
+    {"type": "long", "name": "dividends from stocks", "required": true}, {"type":
+    "long", "name": "num persons worked for employer", "required": true}, {"type":
+    "long", "name": "weeks worked in year", "required": true}, {"type": "double",
+    "name": "ratio_capital_gain_wage", "required": true}, {"type": "double", "name":
+    "ratio_dividend_income", "required": true}, {"type": "double", "name": "employment_intensity",
+    "required": true}, {"type": "integer", "name": "class of worker", "required":
+    true}, {"type": "integer", "name": "major industry code", "required": true}, {"type":
+    "integer", "name": "detailed industry recode", "required": true}, {"type": "integer",
+    "name": "major occupation code", "required": true}, {"type": "integer", "name":
+    "detailed occupation recode", "required": true}, {"type": "integer", "name": "member
+    of a labor union", "required": true}, {"type": "integer", "name": "reason for
+    unemployment", "required": true}, {"type": "integer", "name": "full or part time
+    employment stat", "required": true}, {"type": "integer", "name": "education",
+    "required": true}, {"type": "integer", "name": "enroll in edu inst last wk", "required":
+    true}, {"type": "integer", "name": "marital stat", "required": true}, {"type":
+    "integer", "name": "detailed household and family stat", "required": true}, {"type":
+    "integer", "name": "detailed household summary in household", "required": true},
+    {"type": "integer", "name": "family members under 18", "required": true}, {"type":
+    "integer", "name": "race", "required": true}]'
+  outputs: '[{"type": "long", "name": "label", "required": true}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2025-11-05 06:00:40.198891'

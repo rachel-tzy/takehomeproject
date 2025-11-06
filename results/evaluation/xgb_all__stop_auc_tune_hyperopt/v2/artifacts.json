@@ -1,0 +1,10 @@
+{
+    "metrics_path": "C:\\Users\\tzy\\Desktop\\playground\\TakeHomeProject\\results\\evaluation\\xgb_all__stop_auc_tune_hyperopt\\v2\\metrics.csv",
+    "roc_curve": "C:\\Users\\tzy\\Desktop\\playground\\TakeHomeProject\\results\\evaluation\\xgb_all__stop_auc_tune_hyperopt\\v2\\roc_curve.png",
+    "feature_importance_csv": "C:\\Users\\tzy\\Desktop\\playground\\TakeHomeProject\\results\\evaluation\\xgb_all__stop_auc_tune_hyperopt\\v2\\feature_importance.csv",
+    "plots": [
+        "C:\\Users\\tzy\\Desktop\\playground\\TakeHomeProject\\results\\evaluation\\xgb_all__stop_auc_tune_hyperopt\\v2\\roc_curve.png",
+        "C:\\Users\\tzy\\Desktop\\playground\\TakeHomeProject\\results\\evaluation\\xgb_all__stop_auc_tune_hyperopt\\v2\\feature_importance.png",
+        "C:\\Users\\tzy\\Desktop\\playground\\TakeHomeProject\\results\\evaluation\\xgb_all__stop_auc_tune_hyperopt\\v2\\probability_distribution.png"
+    ]
+}

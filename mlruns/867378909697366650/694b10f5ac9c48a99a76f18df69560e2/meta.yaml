@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/tzy/Desktop/playground/TakeHomeProject/mlruns/867378909697366650/694b10f5ac9c48a99a76f18df69560e2/artifacts
+end_time: 1762320635052
+entry_point_name: ''
+experiment_id: '867378909697366650'
+lifecycle_stage: active
+run_id: 694b10f5ac9c48a99a76f18df69560e2
+run_name: languid-deer-165
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1762320595959
+status: 3
+tags: []
+user_id: tzy

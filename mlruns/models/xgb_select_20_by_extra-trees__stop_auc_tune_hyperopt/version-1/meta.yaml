@@ -1,0 +1,15 @@
+creation_timestamp: 1762318176512
+current_stage: None
+deployment_job_state: null
+description: null
+last_updated_timestamp: 1762318176512
+model_id: m-dde9b25061ad4aa6bee151997d9aee38
+name: xgb_select_20_by_extra-trees__stop_auc_tune_hyperopt
+run_id: cbe5ed31eb644cc086b36ac55a0cdf3e
+run_link: null
+source: models:/m-dde9b25061ad4aa6bee151997d9aee38
+status: READY
+status_message: null
+storage_location: file:///C:/Users/tzy/Desktop/playground/TakeHomeProject/mlruns/867378909697366650/models/m-dde9b25061ad4aa6bee151997d9aee38/artifacts
+user_id: null
+version: 1

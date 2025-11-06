@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/tzy/Desktop/playground/TakeHomeProject/mlruns/867378909697366650/6b0d44ab0c83496f9f02479dcbb6da8a/artifacts
+end_time: 1762322447696
+entry_point_name: ''
+experiment_id: '867378909697366650'
+lifecycle_stage: active
+run_id: 6b0d44ab0c83496f9f02479dcbb6da8a
+run_name: puzzled-robin-971
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1762322430015
+status: 3
+tags: []
+user_id: tzy

@@ -1,0 +1,2 @@
+model_name: xgb_select_20_by_extra-trees__stop_auc_tune_hyperopt
+model_version: '1'

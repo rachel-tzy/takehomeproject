@@ -1,0 +1,6 @@
+{
+  "data_path": "C:\\Users\\tzy\\Desktop\\playground\\TakeHomeProject\\assets\\processed\\data_unmapped.parquet",
+  "output_dir": "C:\\Users\\tzy\\Desktop\\playground\\TakeHomeProject\\results\\segmentation_rules",
+  "segments_file": "C:\\Users\\tzy\\Desktop\\playground\\TakeHomeProject\\results\\segmentation_rules\\rule_segments.parquet",
+  "profiles_file": "C:\\Users\\tzy\\Desktop\\playground\\TakeHomeProject\\results\\segmentation_rules\\segment_profiles.parquet"
+}

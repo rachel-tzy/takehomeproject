@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/tzy/Desktop/playground/TakeHomeProject/mlruns/867378909697366650/cbe5ed31eb644cc086b36ac55a0cdf3e/artifacts
+end_time: 1762318176605
+entry_point_name: ''
+experiment_id: '867378909697366650'
+lifecycle_stage: active
+run_id: cbe5ed31eb644cc086b36ac55a0cdf3e
+run_name: ambitious-steed-192
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1762318161225
+status: 3
+tags: []
+user_id: tzy

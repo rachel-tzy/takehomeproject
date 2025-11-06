@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/tzy/Desktop/playground/TakeHomeProject/mlruns/867378909697366650/bc9cd4e68ec741648fedc1d92fdeea14/artifacts
+end_time: 1762319208704
+entry_point_name: ''
+experiment_id: '867378909697366650'
+lifecycle_stage: active
+run_id: bc9cd4e68ec741648fedc1d92fdeea14
+run_name: bemused-hawk-437
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1762319193757
+status: 3
+tags: []
+user_id: tzy

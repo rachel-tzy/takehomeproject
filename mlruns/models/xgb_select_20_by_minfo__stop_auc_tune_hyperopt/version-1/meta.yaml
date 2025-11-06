@@ -1,0 +1,15 @@
+creation_timestamp: 1762320634961
+current_stage: None
+deployment_job_state: null
+description: null
+last_updated_timestamp: 1762320634961
+model_id: m-786ab6c3af3f469994ea5c11875ed46d
+name: xgb_select_20_by_minfo__stop_auc_tune_hyperopt
+run_id: 694b10f5ac9c48a99a76f18df69560e2
+run_link: null
+source: models:/m-786ab6c3af3f469994ea5c11875ed46d
+status: READY
+status_message: null
+storage_location: file:///C:/Users/tzy/Desktop/playground/TakeHomeProject/mlruns/867378909697366650/models/m-786ab6c3af3f469994ea5c11875ed46d/artifacts
+user_id: null
+version: 1

@@ -1,0 +1,15 @@
+creation_timestamp: 1762319814344
+current_stage: None
+deployment_job_state: null
+description: null
+last_updated_timestamp: 1762319814344
+model_id: m-69c5e42b9756464386fe8edb2999b944
+name: xgb_all__stop_auc_tune_hyperopt
+run_id: 4698113a6c7c49d0821b93a89f38a7f0
+run_link: null
+source: models:/m-69c5e42b9756464386fe8edb2999b944
+status: READY
+status_message: null
+storage_location: file:///C:/Users/tzy/Desktop/playground/TakeHomeProject/mlruns/867378909697366650/models/m-69c5e42b9756464386fe8edb2999b944/artifacts
+user_id: null
+version: 2

@@ -1,0 +1,10 @@
+artifact_location: file:///C:/Users/tzy/Desktop/playground/TakeHomeProject/mlruns/867378909697366650/models/m-69c5e42b9756464386fe8edb2999b944/artifacts
+creation_timestamp: 1762319807101
+experiment_id: '867378909697366650'
+last_updated_timestamp: 1762319814239
+model_id: m-69c5e42b9756464386fe8edb2999b944
+model_type: null
+name: model_artifacts
+source_run_id: 4698113a6c7c49d0821b93a89f38a7f0
+status: 2
+status_message: null
