@@ -1,4 +1,4 @@
-# JPMorgan Chase Take-Home Project – Draft Report
+# JPMorgan Chase Take-Home Project
 
 ---
 
@@ -8,8 +8,6 @@
 - Delivered a **rule-based segmentation model** surfacing marketing-relevant persona groups (e.g., “High Wage Long Work”, “Current Student”).
 - Implemented reproducible preprocessing, model training, evaluation, and segmentation CLI workflows.
 - Identified key drivers (capital gains, weeks worked, union membership, marital status) with actionable marketing implications.
-<!-- - **Next steps:** Deploy classification into pilot marketing flows, finalize automated reporting, iterate segmentation rules with business stakeholders. -->
-
 ---
 
 ## 2. Data Exploration & Understanding
@@ -198,7 +196,22 @@ Household & Family Context – family members under 18, marital stat
 
 <img src="results\evaluation\xgb_select_25_by_extra-trees__stop_auc_tune_hyperopt\v1\probability_distribution.png" alt="drawing" width="450"/>
 
+1. Overall performance is stable across train and holdout. Accuracy, F1 and ROC-AUC drop very slightly from train to holdout. This indicates good generalization with no obvious overfitting.
 
+
+2. Recall is noticeably lower than precision. The model is confidence on predicting positive, but it does not catch all positives. This is typical in imbalanced datasets where the positive class is rare, and the model leans toward caution.
+
+3. F1 score reflects a precision–recall trade-off and overall performance. F1 decreases from 0.662 (train) to 0.614 (holdout), a modest drop consistent with expected generalization loss. Since F1 weighs both precision and recall, this confirms the model is reasonably balanced but still recall-limited.
+
+4. To improve the recall we can try the following strategy in the future:
+
+    - tuning decision threshold,
+
+    - adjusting class weights (scale_pos_weight) to higher,
+
+    - using cost-sensitive metrics in training,
+
+    - oversampling / focal loss variants.
 
 **Feature Importance**
 

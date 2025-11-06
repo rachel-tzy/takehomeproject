@@ -108,9 +108,9 @@ Outputs include:
 - `segment_profiles.parquet`: weighted numeric/categorical summaries.
 - `SUMMARY.json`: quick reference to the inputs, outputs, and rule names.
 
-If you prefer the exploratory clustering notebooks, you can still inspect and adapt `sandbox/segmentation_exploration.ipynb`.
 
 ## Notebooks
+You can check `sandbox/EDA.ipynb` to get the code where the plots in the report are generated.
 
 All notebooks assume paths relative to the repo root. When launching from `sandbox/`, ensure the project root is on `sys.path`. Example:
 
