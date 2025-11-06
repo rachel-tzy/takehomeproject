@@ -31,7 +31,6 @@
 
 - Low positive rate (around 6% with / without considering weight)
 
-- Weight column includes non-numeric tokens; converted to float, defaulted to 1.0 when absent.
 - Skewed distributions of capital gains/losses
 
 ### 2.3 Exploratory Data Analysis 
@@ -124,7 +123,8 @@ poetry run preprocess \
 
 **Architecture & Features**
 
-- Model: **XGBoost binary classifier** (hist tree method, categorical support enabled).
+- Model: **XGBoost binary classifier** (hist tree method, categorical support enabled). XGBoost was selected because it delivers state-of-the-art performance on tabular data, supports sample weights and imbalance handling, requires minimal feature engineering, and remains interpretable.
+
 - Feature Selection: Click option `--reduce-method` supports mutual information, ExtraTrees, or full features; default is ExtraTrees with `n_features=20`.
 - Sample weights integrated end-to-end (train/test CV, final fit).
 
