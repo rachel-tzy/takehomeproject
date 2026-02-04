@@ -4,13 +4,13 @@ This repository contains code to preprocess, model, and evaluate the income-clas
 
 ## Project Structure
 
-- `src/preprocessing.py` �?CLI for generating processed datasets (classification & segmentation variants).
-- `src/train_classification.py` �?CLI to train the XGBoost classifier with hyperparameter search and MLflow logging.
-- `src/evaluate.py` �?CLI to load an MLflow model and produce metrics/plots.
-- `src/segmentation.py` �?rule-based segmentation CLI with weighted profiling.
-- `assets/raw/` �?raw census files (`census-bureau.data`, `.columns`).
-- `assets/processed/` �?processed data.
-- `mlruns/` �?local MLflow tracking data.
+- `src/preprocessing.py` CLI for generating processed datasets (classification & segmentation variants).
+- `src/train_classification.py` CLI to train the XGBoost classifier with hyperparameter search and MLflow logging.
+- `src/evaluate.py` CLI to load an MLflow model and produce metrics/plots.
+- `src/segmentation.py` rule-based segmentation CLI with weighted profiling.
+- `assets/raw/` raw census files (`census-bureau.data`, `.columns`).
+- `assets/processed/` processed data.
+- `mlruns/` local MLflow tracking data.
 
 ## Environment Setup
 
