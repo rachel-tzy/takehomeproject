@@ -1,11 +1,11 @@
-# JPMorgan Chase Take-Home Project
+# Income Classification Take-Home Project
 
 ---
 
 ## 1. Executive Summary
 
 - Built an income classification model (XGboost) predicting whether an individual earns **> \$50K** using the 1994/1995 Census Bureau survey.
-- Delivered a **rule-based segmentation model** surfacing marketing-relevant persona groups (e.g., â€œHigh Wage Long Workâ€, â€œCurrent Studentâ€).
+- Delivered a **rule-based segmentation model** surfacing marketing-relevant persona groups (e.g., â€œHigh Wage Long Workâ€? â€œCurrent Studentâ€?.
 - Implemented reproducible preprocessing, model training, evaluation, and segmentation CLI workflows.
 - Identified key drivers (capital gains, weeks worked, union membership, marital status) with actionable marketing implications.
 ---
@@ -17,7 +17,7 @@
 | Data Source       | Census Bureau 1994/1995 Current Population Survey                           |
 | Files             | `census-bureau.data` (raw), `census-bureau.columns` (schema)                |
 | Records           | ~200K observations after preprocessing                                      |
-| Target            | `label` â€“ converted to binary (1: >50k, 0: <=50k)            |
+| Target            | `label` â€?converted to binary (1: >50k, 0: <=50k)            |
 
 ### 2.1 Initial Analysis
 
@@ -138,7 +138,7 @@ poetry run preprocess \
 
 3. Hyperparameter Tuning: Search space includes both feature selector and XGBoost parameters
 
-    In each trial: select features â†’ train model â†’ score via CV and monitor ROC-AUC
+    In each trial: select features â†?train model â†?score via CV and monitor ROC-AUC
 
     Hyperopt selects best parameters; otherwise use default parameters
 
@@ -174,14 +174,14 @@ poetry run preprocess \
 
 Selected the following features:
 
-- Work Intensity & Experience â€“ weeks worked in year, employment_intensity, wage per hour, num persons worked for employer, full or part time employment stat, member of a labor union, reason for unemployment, enroll in edu inst last wk
+- Work Intensity & Experience â€?weeks worked in year, employment_intensity, wage per hour, num persons worked for employer, full or part time employment stat, member of a labor union, reason for unemployment, enroll in edu inst last wk
 
-- Income Streams â€“ capital gains, dividends from stocks, capital losses, ratio_capital_gain_wage, ratio_dividend_income
+- Income Streams â€?capital gains, dividends from stocks, capital losses, ratio_capital_gain_wage, ratio_dividend_income
 
-- Occupation & Industry â€“ detailed occupation recode, major occupation code, detailed industry recode, major industry code, class of worker, detailed household and family stat, detailed household summary in household
-Household & Family Context â€“ family members under 18, marital stat
+- Occupation & Industry â€?detailed occupation recode, major occupation code, detailed industry recode, major industry code, class of worker, detailed household and family stat, detailed household summary in household
+Household & Family Context â€?family members under 18, marital stat
 
-- Demographics â€“ age, education, race
+- Demographics â€?age, education, race
 
 
 **Preliminary Results**
@@ -240,7 +240,7 @@ Rule-based personas fire in priority order (first match wins for each record):
 
   5. PartTime_or_ShortWeeks (part-time status or weeks/year <= 20, or low employment_intensity <=0.3): This group often exhibits lower annual income due to fewer hours/weeks; critical for labor supply and earnings analyses.
   
-  6. HighEmploymentIntensity (employment_intensity â‰¥0.9): Segments "work effort" apart from payâ€”useful for understanding wage dynamics, overtime, and attachment to labor force.
+  6. HighEmploymentIntensity (employment_intensity â‰?.9): Segments "work effort" apart from payâ€”useful for understanding wage dynamics, overtime, and attachment to labor force.
   
   7. Other
 
@@ -261,7 +261,7 @@ Rule-based personas fire in priority order (first match wins for each record):
 
 1. Low-wage and under-employment dominate the population
 
-    LowWage_FullTime (â‰ˆ29%) and PartTime_or_ShortWeeks (â‰ˆ25%) together represent more than half of the dataset.
+    LowWage_FullTime (â‰?9%) and PartTime_or_ShortWeeks (â‰?5%) together represent more than half of the dataset.
 
     This confirms a wage distribution that is bottom-heavy, with a large share of workers earning below the mid-wage threshold even when working full-year or part-year.
 
@@ -269,7 +269,7 @@ Rule-based personas fire in priority order (first match wins for each record):
 
 2. Children make up roughly a quarter of the records
 
-    The Children segment (~24â€“25%) is large because the dataset includes individuals outside the labor force. Excluding minors in downstream wage or employment models would materially change rate denominators, so flagging them early is important.
+    The Children segment (~24â€?5%) is large because the dataset includes individuals outside the labor force. Excluding minors in downstream wage or employment models would materially change rate denominators, so flagging them early is important.
 
 3. Capital-income earners are a distinct but minority group
 
@@ -277,7 +277,7 @@ Rule-based personas fire in priority order (first match wins for each record):
 
 4. High-wage and high-intensity workers are rare
 
-    HighWage_FullTime (â‰ˆ4%) and HighEmploymentIntensity (â‰ˆ2%) together account for less than 7% of the population. These groups are economically significant but statistically small, meaning appropriate downstream strategy may bring considerable financial impact.
+    HighWage_FullTime (â‰?%) and HighEmploymentIntensity (â‰?%) together account for less than 7% of the population. These groups are economically significant but statistically small, meaning appropriate downstream strategy may bring considerable financial impact.
 
 5. The "Other" bucket is very small (~2%)
 
@@ -313,9 +313,9 @@ Weighted numeric means per segment
    _Recommendation:_ Prioritize financial product cross-sell targeting individuals with positive capital gains/dividends.
 
 2. **Segments Provide Actionable Personas:**  
-   - â€œHighIncome_CapitalOrDividendâ€ â€“ premium card & wealth management upsell.  
-   - â€œCurrentStudentâ€ â€“ tailor student offers, credit builder products.  
-   - â€œRecentMigrantOrNonCitizenâ€ â€“ outreach with newcomer banking packages.
+   - â€œHighIncome_CapitalOrDividendâ€?â€?premium card & wealth management upsell.  
+   - â€œCurrentStudentâ€?â€?tailor student offers, credit builder products.  
+   - â€œRecentMigrantOrNonCitizenâ€?â€?outreach with newcomer banking packages.
 
 3. **Model Performance (placeholder)** indicates robust discriminatory power; monitor metrics in production with MLflow.
 
@@ -332,4 +332,5 @@ Weighted numeric means per segment
 
  - I used GenAI to help debug code and formating.
 ---
+
 

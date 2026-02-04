@@ -1,5 +1,5 @@
 [project]
-name = "jpmc-takehome"
+name = "income-classification-takehome"
 version = "0.1.0"
 description = ""
 authors = [
@@ -23,14 +23,17 @@ dependencies = [
 
 [tool.poetry]
 package-mode = false
+packages = [{ include = "income_takehome" }]
 
 [tool.poetry.scripts]
-preprocess = "jpmc_takehome.src.preprocessing:main"
-train-classification = "jpmc_takehome.src.train_classification:train"
-evaluate = "jpmc_takehome.src.evaluate:evaluate"
-segment = "jpmc_takehome.src.segmentation:main"
+preprocess = "income_takehome.src.preprocessing:main"
+train-classification = "income_takehome.src.train_classification:train"
+evaluate = "income_takehome.src.evaluate:evaluate"
+segment = "income_takehome.src.segmentation:main"
 
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+

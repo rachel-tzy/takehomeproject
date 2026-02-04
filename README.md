@@ -1,16 +1,16 @@
-# JPMorgan Chase Take-Home Project
+# Income Classification Take-Home Project
 
 This repository contains code to preprocess, model, and evaluate the income-classification task described in the take-home instructions. A segmentation workflow is being built in parallel; its open pieces are noted below.
 
 ## Project Structure
 
-- `jpmc_takehome/src/preprocessing.py` â€“ CLI for generating processed datasets (classification & segmentation variants).
-- `jpmc_takehome/src/train_classification.py` â€“ CLI to train the XGBoost classifier with hyperparameter search and MLflow logging.
-- `jpmc_takehome/src/evaluate.py` â€“ CLI to load an MLflow model and produce metrics/plots.
-- `jpmc_takehome/src/segmentation.py` â€“ rule-based segmentation CLI with weighted profiling.
-- `assets/raw/` â€“ raw census files (`census-bureau.data`, `.columns`).
-- `assets/processed/` â€“ processed data.
-- `mlruns/` â€“ local MLflow tracking data.
+- `src/preprocessing.py` â€?CLI for generating processed datasets (classification & segmentation variants).
+- `src/train_classification.py` â€?CLI to train the XGBoost classifier with hyperparameter search and MLflow logging.
+- `src/evaluate.py` â€?CLI to load an MLflow model and produce metrics/plots.
+- `src/segmentation.py` â€?rule-based segmentation CLI with weighted profiling.
+- `assets/raw/` â€?raw census files (`census-bureau.data`, `.columns`).
+- `assets/processed/` â€?processed data.
+- `mlruns/` â€?local MLflow tracking data.
 
 ## Environment Setup
 
@@ -118,7 +118,8 @@ All notebooks assume paths relative to the repo root. When launching from `sandb
 import sys
 from pathlib import Path
 project_root = Path.cwd()
-if not (project_root / "jpmc_takehome").exists():
+if not (project_root / "<package_root>").exists():
     project_root = project_root.parent
 sys.path.insert(0, str(project_root))
 ```
+
