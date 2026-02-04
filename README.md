@@ -1,4 +1,4 @@
-# JPMorgan Chase Take-Home Project
+# Take-Home Project
 
 This repository contains code to preprocess, model, and evaluate the income-classification task described in the take-home instructions. A segmentation workflow is being built in parallel; its open pieces are noted below.
 
